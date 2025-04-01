@@ -33,7 +33,8 @@ python -m torch.distributed.launch --nproc_per_node=4 --use_env evolution.py --d
 ```
 ### Test
 Before testing the search results, you may need to comment out lines 325-327 in supernet_train.py. These lines remove the classification head from the model when fine-tuning the supernet, which should not be removed for testing. Additionally, you should create a yaml file similar to ./experiments/subnet/UCM_fold0.yaml based on your search results.
-You can test the search result with following command:
+
+You can then test the search result with following command:
 ```bulidoutcfg
 python -m torch.distributed.launch --nproc_per_node=4 --use_env supernet_train.py --data-path /PATH/TO/DATASET/ --gp --change_qkv --mode retrain --relative_position --dist-eval --cfg /SEARCH_RESULT --batch-size 128 --resume /PATH/TO/CHECKPOINT --data-set DATASET_NAME --eval ''
 ```
