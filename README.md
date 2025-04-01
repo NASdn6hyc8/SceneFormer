@@ -41,4 +41,4 @@ python -m torch.distributed.launch --nproc_per_node=4 --use_env supernet_train.p
 
 ## Acknowledgements
 
-The codes are inspired by [AutoFormer](https://github.com/microsoft/Cream/tree/main/AutoFormer), [HAT](https://github.com/mit-han-lab/hardware-aware-transformers), [DeiT](https://github.com/facebookresearch/deit), [SPOS](https://github.com/megvii-model/SinglePathOneShot).
+The codes are inspired by [AutoFormer](https://github.com/microsoft/Cream/tree/main/AutoFormer), [HAT](https://github.com/mit-han-lab/hardware-aware-transformers), [SPOS](https://github.com/megvii-model/SinglePathOneShot).
